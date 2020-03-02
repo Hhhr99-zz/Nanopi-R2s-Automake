@@ -162,6 +162,7 @@ menu() {
         ;;
     4)
         shell_mode="start_makes"
+	start_makes
         ;;
     0)
         exit 0
