@@ -145,7 +145,7 @@ start_makes(){
 	
 	cd ./friendlywrt-rk3328
 	
-	./build.sh nanopi_r2s.mk
+	./build.sh emmc-img
 	
 	rm -rf ./artifact/
 
