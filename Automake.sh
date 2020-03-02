@@ -137,12 +137,14 @@ start_makes(){
 	sed -i 's/pcdata(boardinfo.system or "?")/"ARMv8"/' feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
 
 	#----------------------------------------------------------------------
-	rm -rf .config 清除编译配置和缓存
+	rm -rf .config #清除编译配置和缓存
 	#----------------------------------------------------------------------
-	make menuconfig 进入编译配置菜单
+	make menuconfig #进入编译配置菜单
 	
 	../
-	cd ./friendlywrt-rk3328 
+	
+	cd ./friendlywrt-rk3328
+	
 	./build.sh nanopi_r2s.mk
 	
 	rm -rf ./artifact/
