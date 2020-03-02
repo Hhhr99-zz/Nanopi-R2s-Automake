@@ -198,12 +198,12 @@ sed -i '/Load Average/i\<tr><td width="33%"><%:CPU Temperature%></td><td><%=luci
 sed -i 's/pcdata(boardinfo.system or "?")/"ARMv8"/' feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
 
 #----------------------------------------------------------------------
-###rm -rf .config 清除编译配置和缓存
+rm -rf .config 清除编译配置和缓存
 #----------------------------------------------------------------------
 make menuconfig 进入编译配置菜单
 ../
 ./build.sh nanopi_r2s.mk
 
-#配置默认ip：vi ./friendlywrt-rk3328/friendlywrt/package/base-files/files/bin/config_generate
-#配置默认主题：222
+配置默认ip：vi ./friendlywrt-rk3328/friendlywrt/package/base-files/files/bin/config_generate
+配置默认主题：222
 
