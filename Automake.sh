@@ -119,7 +119,7 @@ start_makes(){
 	git remote add upstream https://github.com/coolsnowwolf/lede && git fetch upstream #更新源码
 	./scripts/feeds update -a && ./scripts/feeds install -a #更新FEEDS
 	rm -rf ./friendlywrt-rk3328/friendlywrt/package/feeds.conf.default  #删除原有feeds
-	cp -r ./lede/feeds.conf.default /home/test/friendlywrt-rk3328/friendlywrt/ #将新得feeds复制到friendlywrt
+	cp -r ./lede/feeds.conf.default ${HOME}/friendlywrt-rk3328/friendlywrt/ #将新得feeds复制到friendlywrt
 	cd ../ #回到根目录
 	#-----------------------------------------------------------------------
 	#更新package
