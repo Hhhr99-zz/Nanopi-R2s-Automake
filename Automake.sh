@@ -140,7 +140,9 @@ start_makes(){
 	rm -rf .config 清除编译配置和缓存
 	#----------------------------------------------------------------------
 	make menuconfig 进入编译配置菜单
+	
 	../
+	cd ./friendlywrt-rk3328 
 	./build.sh nanopi_r2s.mk
 	
 	rm -rf ./artifact/
