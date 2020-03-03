@@ -122,7 +122,7 @@ start_makes(){
 	#./scripts/feeds update -a && ./scripts/feeds install -a #更新FEEDS
 	#rm -rf ./friendlywrt-rk3328/friendlywrt/package/feeds.conf.default  #删除原有feeds
 	#rm -rf ./friendlywrt-rk3328/friendlywrt/package/lean  #删除原有插件
-	#cp -r ./lede/lean ${HOME}/friendlywrt-rk3328/friendlywrt/lean  #复制新的插件到改目录
+	#cp -r ./lede/lean ${HOME}/friendlywrt-rk3328/friendlywrt/package/lean  #复制新的插件到改目录
 	#cp -r ./lede/feeds.conf.default ${HOME}/friendlywrt-rk3328/friendlywrt/ #将新得feeds复制到friendlywrt
 	#cd ../ #回到根目录
 	#-----------------------------------------------------------------------
